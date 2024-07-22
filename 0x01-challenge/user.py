@@ -3,12 +3,15 @@
 User class
 """
 
-class User:
+class User():
     """ Documentation """
+
     __email = None
+
     def __init__(self):
         """ Documentation """
-        self.__email = email
+        self.__email = None
+
     @property
     def email(self):
         """ Documentation """
@@ -25,6 +28,7 @@ class User:
    
     
 if __name__ == "__main__":
+
     u = User()
     u.email = "john@snow.com"
     print(u.email)
