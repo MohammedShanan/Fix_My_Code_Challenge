@@ -5,8 +5,8 @@ User class
 
 class User:
     """ Documentation """
-
-    def __init__(self, email):
+    __email = None
+    def __init__(self):
         """ Documentation """
         self.__email = email
     @property
@@ -25,5 +25,6 @@ class User:
    
     
 if __name__ == "__main__":
-    u = User("john@snow.com")
+    u = User()
+    u.email = "john@snow.com"
     print(u.email)
